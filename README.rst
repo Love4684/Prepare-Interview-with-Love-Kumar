@@ -34,3 +34,58 @@ product of all prime number less than given number
         return 0;
     }
     // ans = 30
+
+
+Program to print the diamond shape
+===============================================================================
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      int main()
+       {      
+           int n, j, k;
+              cin >> n;
+              for(int i = 1; i <= n; i++ )
+              {
+                  for (j = n; j > i; j--)
+                  {
+                      cout << " ";
+                  }
+                  for (k = 1; k <= i; k++)
+                  {
+                      cout << "* ";
+                  }
+                  cout << endl;
+              }
+              for(int i = 1; i < n; i++ )
+              {
+                  for (j = 1; j <= i; j++)
+                  {
+                      cout << " ";
+                  }
+                  for (k = n-1; k >= i; k--)
+                  {
+                      cout << "* ";
+                  }
+                  cout << endl;
+              }
+
+          return 0;
+      }
+
+output
+
+.. code:: c++
+
+          * 
+         * * 
+        * * * 
+       * * * * 
+      * * * * * 
+       * * * * 
+        * * * 
+         * * 
+          * 
