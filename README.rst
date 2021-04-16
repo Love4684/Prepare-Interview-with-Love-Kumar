@@ -95,26 +95,26 @@ Find kth Largest element in array
 
 .. code:: c++
 
-#include<bits/stdc++.h>
-using namespace std;
+      #include<bits/stdc++.h>
+      using namespace std;
 
-      int main()
-       {     
-           vector<int> v = {2, 4, 6, 3, 5};
-           int  k = 2; 
+            int main()
+             {     
+                 vector<int> v = {2, 4, 6, 3, 5};
+                 int  k = 2; 
 
-          priority_queue<int, vector<int>, greater<int> > minheap;
-          for (int i = 0; i < 5; ++i)
-           {
-               minheap.push(v[i]);
-               if(minheap.size() > k)
-               {
-                  minheap.pop();
-               }
-           }
-           cout << minheap.top() << " ";     
-          return 0;
-      }
+                priority_queue<int, vector<int>, greater<int> > minheap;
+                for (int i = 0; i < 5; ++i)
+                 {
+                     minheap.push(v[i]);
+                     if(minheap.size() > k)
+                     {
+                        minheap.pop();
+                     }
+                 }
+                 cout << minheap.top() << " ";     
+                return 0;
+            }
 
 .. code:: c++
 
