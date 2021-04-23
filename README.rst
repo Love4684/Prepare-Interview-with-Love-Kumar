@@ -155,6 +155,45 @@ find the nth Prime Number
       }
 
 
+Longest Increasing Subsequence
+===============================================================================
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      int main()
+       {     
+           vector<int> v = {3, 5, 9, 7, 8};
+           vector<int> dp(v.size(), 1);
+
+           for (int i = 0; i < v.size(); ++i)
+           {
+               for (int j = 0; j < i; ++j)
+               {
+                   if(v[j] < v[i])
+                   {
+                      dp[i] = max(dp[i], dp[j]+1);
+                   }
+               }
+           }
+           for (auto it : dp)
+           {
+               cout << it << " ";
+           }
+           cout << endl <<  *max_element(dp.begin(), dp.end()) << endl;
+
+           return 0;
+      }
+
+output
+
+      1 2 3 3 4 
+      4
+
+
+
 
 
 LRU Cache Implementation
