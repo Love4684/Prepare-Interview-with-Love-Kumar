@@ -19,6 +19,35 @@ list
 
       int main()
        {     
+           list<int> list1 = {4, 2, 7, 1, 5};
+           list<int> list2 = {3, 4, 8, 1, 6};
+           list<int> list3;
+
+           list1.sort();
+           list2.sort();
+           set_symmetric_difference(list1.begin(), list1.end(), 
+              list2.begin(), list2.end(), back_inserter(list3));
+           for (auto it : list3)
+           {
+               cout << it << " ";
+           }
+
+           return 0;
+      }
+
+output
+
+.. code:: c++
+
+      2 3 5 6 7 8 
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      int main()
+       {     
            list<int> list1;
            list<int> list2;
            int n, temp;
