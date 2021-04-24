@@ -7,9 +7,9 @@
 Q.1
 ===============================================================================
 
-.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/1.png
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/cohesity/6.png
 
-Reverse a Sentence using Stacks
+list
 ------------
 
 .. code:: c++
@@ -18,41 +18,46 @@ Reverse a Sentence using Stacks
       using namespace std;
 
       int main()
-       {      
-           string s;
-           getline(cin, s);
-           stack <string> st;
-           for (int i = 0; i < s.length(); ++i)
-           {  string w = "";
-               while(s[i]!=' ' && i < s.length() )
-               {
-                  w += s[i];
-                  i++;
-               }
-               st.push(w);
-           }
-
-           while(!st.empty())
+       {     
+           list<int> list1;
+           list<int> list2;
+           int n, temp;
+           cin >> n;
+           for (int i = 0; i < n; ++i)
            {
-              cout << st.top() << " ";
-              st.pop();
+              cin >> temp;
+              list1.push_back(temp);
+           }
+            for (int i = 0; i < n; ++i)
+           {
+              cin >> temp;
+              list2.push_back(temp);
+           }
+           list1.merge(list2);
+           list1.sort();
+           list1.unique();
+
+           for (auto it : list1)
+           {
+               cout << it << " ";
            }
 
-          return 0;
+           return 0;
       }
 
 input
 
 .. code:: c++
 
-      RAM is a good boy
-
+      5
+      4 2 7 1 5
+      3 4 8 1 6
 
 output
 
 .. code:: c++
 
-      boy good a is RAM 
+      1 2 3 4 5 6 7 8 
 
 
 Q.2
