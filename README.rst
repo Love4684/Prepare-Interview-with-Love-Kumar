@@ -195,6 +195,49 @@ output
       1 2 3 3 4 
       4
 
+Longest Increasing Subsequence NlogN approach
+===============================================================================
+
+.. code:: c++
+
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      int main()
+       {     
+           vector<int> v = {3, 10, 2, 1, 20};
+           vector<int> dp;
+           dp.push_back(v[0]);
+
+           for (int i = 1; i < v.size(); ++i)
+           {
+               if(v[i] > dp.back())
+               {
+                  dp.push_back(v[i]);
+               }
+               else
+               {
+                  int ind = upper_bound(dp.begin(), dp.end(), v[i]) - dp.begin();
+                  dp[ind] = v[i];
+               }
+           }
+           for (auto it : dp)
+           {
+               cout << it << " ";
+           }
+           cout << endl <<  dp.size() << endl;
+
+           return 0;
+      }
+
+output
+
+.. code:: c++
+
+      1 10 20 
+      3
+
 
 
 
