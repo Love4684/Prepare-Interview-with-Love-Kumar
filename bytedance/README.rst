@@ -3,7 +3,19 @@
    :local:
    :depth: 2
    
+
 Q.1
+===============================================================================
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/1.png
+
+cpp code
+------------
+
+.. code:: c++
+
+
+Q.2
 ===============================================================================
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/2.png
