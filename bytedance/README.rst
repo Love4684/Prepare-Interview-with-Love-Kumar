@@ -94,13 +94,15 @@ cpp code
         return 0;
     }
     
-Q.2
+Q.3
 ===============================================================================
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/5.png    
 
 cpp code
 ------------
+
+`python <http://www.python.org>`_
 
 .. code:: c++
 
@@ -115,12 +117,6 @@ cpp code
               result.push_back(str);
                return;
           }
-      // {   static char str[100];
-      //     if(close == n)
-      //     {
-      //         cout << str << endl;
-      //         return;
-      //     }
           if(open < n)
           {
               str[pos] = '(';
