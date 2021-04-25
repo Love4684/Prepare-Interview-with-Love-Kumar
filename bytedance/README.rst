@@ -94,7 +94,7 @@ cpp code
         return 0;
     }
     
-Q.3
+Q.3 Generate Parentheses
 ===============================================================================
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/5.png    
@@ -102,7 +102,7 @@ Q.3
 cpp code
 ------------
 
-`python <http://www.python.org>`_
+`Generate Parentheses leetcode <https://leetcode.com/problems/generate-parentheses/>`_
 
 .. code:: c++
 
