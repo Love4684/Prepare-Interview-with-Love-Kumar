@@ -93,3 +93,51 @@ cpp code
         cout<<printTrib(n);
         return 0;
     }
+    
+Q.2
+===============================================================================
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/5.png    
+
+cpp code
+------------
+
+.. code:: c++
+
+      class Solution {
+      public:
+         void Parenthesis(int pos, int n, int open, int close, char str[], vector<string> &result)
+      {
+
+          if(close == n)
+          {
+              str[2*n] = '\0';
+              result.push_back(str);
+               return;
+          }
+      // {   static char str[100];
+      //     if(close == n)
+      //     {
+      //         cout << str << endl;
+      //         return;
+      //     }
+          if(open < n)
+          {
+              str[pos] = '(';
+              Parenthesis(pos+1, n, open+1, close, str, result);
+          }
+          if(close < open)
+          {
+              str[pos] = ')';
+              Parenthesis(pos+1, n, open, close+1, str, result);
+          }
+      }
+          vector<string> generateParenthesis(int n) {
+              vector<string> result;
+             char str[100];
+
+          Parenthesis(0, n, 0, 0, str, result);
+              return result;
+
+          }
+      };
