@@ -240,6 +240,66 @@ output
 
 
 
+Palindromic Substring
+===============================================================================
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+      int LPS(string str)
+      { int n = str.size();
+          int maxlength = 1, start;
+          int count = n;
+          bool a[n][n];
+          memset(a, 0, sizeof(a));
+          for (int i = 0; i < n; ++i)
+          a[i][i] = true;
+
+          for (int i = 0; i < n-1; ++i)
+          {
+              if(str[i] == str[i+1])
+              {
+                  a[i][i+1] = true; count++;
+                  start = i;
+                  maxlength = 2;
+              }
+          }
+
+          for(int k = 3; k <= n; k++)
+          {
+              for (int i = 0; i <= n-k; ++i)
+          {int j = k+i-1;
+              if(a[i+1][j-1] && str[i] == str[j])
+              {
+                  a[i][j] = true; count++;
+                  start = i;
+                  if(k>maxlength)
+                  maxlength = k;
+              }
+          }
+          }
+          cout << "total Palindromic Substring is : " << count << endl;
+          cout << "longest Palindromic Substring is : " << str.substr(start, maxlength) << endl;
+          return maxlength;
+
+      }
+      int main()
+      {
+          string str = "ABCDCBE";
+         int l = LPS(str);
+         cout << "maxlength of Palindromic Substring is : " <<  l;
+
+          return 0;
+      }
+
+output
+
+.. code:: c++
+
+      total Palindromic Substring is : 9
+      longest Palindromic Substring is : BCDCB
+      maxlength of Palindromic Substring is : 5
 
 
 LRU Cache Implementation
