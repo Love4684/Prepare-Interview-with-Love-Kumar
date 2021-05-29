@@ -430,3 +430,33 @@ Given an array A[] and a number x, check for pair in A[] with sum as x
          findpair(v, sum);
          return 0;
       }
+
+Method 2: Hashing.
+------------------
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      void findpair(std::vector<int> v, int sum)
+      {
+          unordered_set<int> s;
+          for (int i = 0; i < v.size(); ++i)
+          {
+              int temp = sum-v[i];
+              if(s.find(temp) != s.end())
+                  cout << temp << " " << v[i] << endl;
+              s.insert(v[i]);
+          }
+      }
+
+      int main()
+      {
+         std::vector<int> v = {1, 4, 45, 6, 10, 8};
+         int sum = 16;
+         findpair(v, sum);
+         return 0;
+      }
+
+
