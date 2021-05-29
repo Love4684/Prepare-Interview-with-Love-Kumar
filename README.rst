@@ -396,4 +396,37 @@ Given a number, find the next smallest palindrome
           return 0;
       }
 
+Given an array A[] and a number x, check for pair in A[] with sum as x
+===============================================================================
 
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      void findpair(std::vector<int> v, int sum)
+      {
+          sort(v.begin(), v.end());
+          int l = 0;
+          int r = v.size() - 1;
+          while(l<r)
+          {
+              if((v[l] + v[r]) == sum)
+              {
+                  cout << v[l] << " " << v[r];
+                  break;
+              }
+              if((v[l] + v[r]) < sum)
+                  l++;
+              else
+                  r--;
+          }
+      }
+
+      int main()
+      {
+         std::vector<int> v = {4, 5, 6, 7, 5, 4, 4};
+         int sum = 10;
+         findpair(v, sum);
+         return 0;
+      }
