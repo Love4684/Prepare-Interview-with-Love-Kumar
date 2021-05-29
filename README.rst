@@ -339,3 +339,61 @@ output
 .. code:: c++
 
       6 4 2 4 3 1 5
+
+Given a number, find the next smallest palindrome
+===============================================================================
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+
+      string nxtpl(string num)
+      {
+          int n = num.size();
+          string str = num;
+          for (int i = 0, j = n-1; i < j; ++i, --j)
+          {
+              str[j] = str[i];
+          }
+          if(str > num)
+              return str;
+          else
+          {
+              int mid = n/2;
+              if((n&1) == 0) mid--;
+              while(mid>=0)
+              {
+                  if(str[mid] < '9')
+                  {
+                      str[mid]++;
+                      break;
+                  }
+                  else
+                  {
+                      str[mid] = '0';
+                      mid--;
+                  }
+              }
+              if(mid==-1 && str[0] == '0')
+              {
+                  n++;
+                  str = '1' + str;
+              }
+              for(int i = 0, j = n-1; i < j; i++, j--)
+              {
+                  str[j] = str[i];
+              }
+              return str;
+          }
+      }
+
+      int main()
+      {
+          string s = "4321";
+          string np = nxtpl(s);
+          cout << np;
+          return 0;
+      }
+
+
