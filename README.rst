@@ -510,3 +510,40 @@ Shortest path in a Binary Maze
          solution ob;
          cout << (ob.shortestPathBinaryMatrix(v));
       }
+
+product of all prime number less than given number
+===============================================================================
+
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+      void fun(int arr[], int n)
+      {int j;
+          for (int i = 0; i < n; ++i)
+          {
+              for ( j = i+1; j < n; ++j)
+              {
+                  if(arr[i] < arr[j])
+                  {
+                       arr[i] = arr[j];
+                      break;
+                  }  
+              }
+              if(j==n)
+              {
+                  arr[i] = -1;
+              }
+          }  
+          for (int i = 0; i < n; ++i)
+          {
+              cout << arr[i] << " ";
+          }
+      }
+      int main()
+      {
+         int arr[]= {4, 5, 30, 2, 25};
+         // 5 25 25 -1
+         fun(arr, 5);
+         return 0;
+      }
