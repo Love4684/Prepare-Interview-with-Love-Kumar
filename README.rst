@@ -459,4 +459,54 @@ Method 2: Hashing.
          return 0;
       }
 
+Shortest path in a Binary Maze
+===============================================================================
 
+.. code:: c++
+
+      #include<bits/stdc++.h>
+      using namespace std;
+      int dir[8][2] = {{1, -1}, {1, 1}, {1, 0}, {0, -1}, {0, 0}, {0, 1}, {-1, 0}, {-1, 1}};
+      struct point
+      {
+          int x;
+          int y;
+          int count;
+      };
+      class solution
+      {
+      public:
+          int shortestPathBinaryMatrix(vector<vector<int>> &grid)
+          {
+              if(grid[0][0] == -1) return -1;
+              int row = grid.size();
+              int col = grid[0].size();
+              queue<point> q;
+              q.push({0, 0, 1});
+              grid[0][0] = -1;
+              while(!q.empty())
+              {
+                  point p = q.front();
+                  q.pop();
+                  if(p.x == row-1 && p.y == col-1)
+                      return p.count;
+                  for (int i = 0; i < 8; ++i)
+                  {
+                      int x = p.x + dir[i][0];
+                      int y = p.y + dir[i][1];
+                      if(x>=0 && x<row && y>=0 && y<col && grid[x][y]==0)
+                      {
+                          q.push({x, y, p.count+1});
+                          grid[x][y] = -1;
+                      }
+                  }
+              }
+              return -1;
+          }
+
+      };
+      int main(){
+         vector<vector<int>> v = {{0,0,0},{1,1,0},{1,1,0}};
+         solution ob;
+         cout << (ob.shortestPathBinaryMatrix(v));
+      }
