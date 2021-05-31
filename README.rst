@@ -511,7 +511,7 @@ Shortest path in a Binary Maze
          cout << (ob.shortestPathBinaryMatrix(v));
       }
 
-product of all prime number less than given number
+Next Greater Element
 ===============================================================================
 
 .. code:: c++
@@ -547,3 +547,9 @@ product of all prime number less than given number
          fun(arr, 5);
          return 0;
       }
+
+output
+
+.. code:: c++
+
+      5 30 -1 25 -1 
