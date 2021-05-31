@@ -466,7 +466,7 @@ Shortest path in a Binary Maze
 
       #include<bits/stdc++.h>
       using namespace std;
-      int dir[8][2] = {{1, -1}, {1, 1}, {1, 0}, {0, -1}, {0, 0}, {0, 1}, {-1, 0}, {-1, 1}};
+      int dir[8][2] = {{1, 1}, {1, -1}, {-1, 1}, {1, 0}, {0, 1}, {-1, -1}, {0, -1}, {-1, 0}};
       struct point
       {
           int x;
