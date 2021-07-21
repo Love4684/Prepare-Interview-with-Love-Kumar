@@ -3,14 +3,16 @@
    :local:
    :depth: 2
    
+S.E
+===============================================================================
 
 Q.1
-===============================================================================
+----------
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/1.png
 
 Reverse a Sentence using Stacks
-------------
+......................
 
 .. code:: c++
 
@@ -56,7 +58,7 @@ output
 
 
 Q.2
-===============================================================================
+----------------------
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/2.png
 
@@ -64,7 +66,6 @@ Q.2
 
 
 cpp code
-------------
 
 .. code:: c++
 
@@ -106,7 +107,15 @@ cpp code
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/S.E/7.png
 
-    
+
+
+
+
+se
+===============================================================================
+
+
+
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/1.png
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/2.png
@@ -118,12 +127,11 @@ cpp code
 
     
 Q.3 Generate Parentheses
-===============================================================================
+-------------------------
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/5.png    
 
 cpp code
-------------
 
 `Generate Parentheses leetcode <https://leetcode.com/problems/generate-parentheses/>`_
 
@@ -173,4 +181,24 @@ cpp code
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/se/11.png
 
+
+
+ML
+===============================================================================
+
+
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/1.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/2.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/3.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/4.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/5.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/6.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/bytedance/ML/7.png
 
