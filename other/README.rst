@@ -6,7 +6,7 @@
 S.E
 ===============================================================================
 
-Q.1
+Q.1 solution
 ----------
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/1.png
@@ -32,6 +32,10 @@ Q.1
          int count = 2*(min(m['u'], m['d']) + min(m['r'], m['l']));
          cout << count;
       }
+      
+      
+Q.2 solution
+----------
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/5.png
 
