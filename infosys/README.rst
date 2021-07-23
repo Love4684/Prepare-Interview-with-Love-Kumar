@@ -52,6 +52,5 @@ Q.1
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/infosys/23.png
 
-.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/infosys/24.png
 
 
