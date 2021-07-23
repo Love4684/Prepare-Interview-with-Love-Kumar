@@ -19,4 +19,3 @@ Q.1
 
 .. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/uber/5.png
 
-.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/uber/6.png
