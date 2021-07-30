@@ -90,5 +90,42 @@ Q 3. string transformation
       2
       -1
 
-Q.3 solution
-----------
+.. code:: c++
+
+
+      #include<bits/stdc++.h>
+      using namespace std;
+      int main()
+      {
+         int t;
+         cin>>t;
+         while(t--)
+         {
+            int n;
+            cin>>n;
+            string s1,s2;
+            cin>>s1;
+            cin>>s2;
+            int ans=0,i=0;
+            while(i<n)
+            {
+               if(i==n-1)
+               {
+                  if(s1[i]!=s2[i])
+                     ans=-1;
+               }
+               else
+               {
+                  if(s1[i]!=s2[i])
+                  {
+                     s1[i]=(s1[i]=='0'?'1':'0');
+                     s1[i+1]=(s1[i+1]=='0'?'1':'0');
+                     ans++;
+                  }
+               }
+               i++;
+            }
+            cout<<ans<<endl;
+         }	
+
+      }
