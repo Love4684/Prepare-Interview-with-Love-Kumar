@@ -129,3 +129,53 @@ Q 3. string transformation
          }	
 
       }
+
+Q 4. Special Numbers
+===============================================================================
+
+.. code:: c++
+
+      A number that can be represented as the sum of two distinct single-digit numbers that are odd and prime in nature with each of the two prime numbers consisting of positive       power.
+
+      For converting a non-special number to a special number, you have to perform any one of the following operations:
+
+      Increase the given number by 1 and the associated cost for this operation is called Increasing Cost.
+      Decrease the number by 1 the associated cost for this operation is called Decreasing Cost.
+      Your task is to convert the given number into a special number at a minimum cost.
+
+      Input format:
+      -First line denoting the number of test cases
+      For each test case
+      -First line: it contains the number that must be converted into a special number
+      -Second line Decreasing Cost
+      -Third line Increasing Cost
+
+      Output format:
+      For each test case print the minimum Sost in a new e to convert it to a special number
+
+      Constraints:
+
+      1 <= t <= 3*10^5
+
+      1 <= Number <= 10^9
+
+      1 <= IncreasingCost <= 10^9
+
+      1 <= DecreasingCost <= 10^9
+
+      Sample Input:
+
+      1
+
+      4
+
+      7
+
+      8
+
+      Sample Output:
+
+      32
+
+      Explanation: To make 4 a special number,we increment the number 4 times to make it 8.
+      8 is a special number since it can be represented as 3^1 + 5^1. Increment cost is 8 so total cost is 8+8+8+8 = 32.
