@@ -186,3 +186,26 @@ Q 4. Special Numbers
 
       Explanation: To make 4 a special number,we increment the number 4 times to make it 8.
       8 is a special number since it can be represented as 3^1 + 5^1. Increment cost is 8 so total cost is 8+8+8+8 = 32.
+      
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/10.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/11.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/12.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/13.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/14.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/15.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/16.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/17.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/18.png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/other/19.png
+
+      
