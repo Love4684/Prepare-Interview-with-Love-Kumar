@@ -13,4 +13,6 @@ Q.1
     https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/
 
 
-.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/InnoGeeks/media/1.png
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/Google/Image/Screenshot%20(199).png
+
+.. image:: https://github.com/Love4684/Prepare-Interview-with-Love-Kumar/blob/main/Google/Image/Screenshot%20(201).png
